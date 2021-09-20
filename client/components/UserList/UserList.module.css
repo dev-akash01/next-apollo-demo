@@ -1,0 +1,21 @@
+.none {
+    text-align: center;
+    font-size: 26px;
+    color: gray;
+  }
+
+.userResultsSection{
+    margin-top: 1%;
+}
+
+.responselabel{
+    padding: 10px;
+    text-align: center;
+    background: #8080802b;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 5px;
+}
+  
+.loadMoreBtn button{
+    width: 100%
+  }
