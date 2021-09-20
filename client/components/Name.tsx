@@ -16,7 +16,7 @@ const Name = () => {
   if (loading) () => 'Loading...'
   if (error) () => `Error occured: ${error.message}`
 
-  return <span>{data.user.name}</span>
+  return <span>{data && data.user.name}</span>
 }
 
 
