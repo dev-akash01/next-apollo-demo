@@ -10,7 +10,7 @@ Simple Next.js example with Apollo
 - Apollo Graph QL
 - TypeScript
 
-## Instructions to RUN
+## Instructions to Run application
 - System Requirements: Node.js
 - Clone the repo
 - Frontend Setup:
