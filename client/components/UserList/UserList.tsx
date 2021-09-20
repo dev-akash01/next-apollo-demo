@@ -22,16 +22,16 @@ const UserList = () => {
         offset: data.users.length + 1,
         limit: PAGELIMIT,
       },
-      updateQuery: (previousResult: any, { fetchMoreResult }) => {
+      updateQuery: (previousReponse: any, { fetchMoreResult }) => {
         setloadMoreBtn(fetchMoreResult.users.length)
         if (!fetchMoreResult) {
-          return previousResult;
+          return previousReponse;
         }
 
-        setUsers(previousResult.users)
-        return Object.assign({}, previousResult, {
-          users: [...previousResult.users, ...fetchMoreResult.users]
-        })
+        setUsers(previousReponse.users);
+        return Object.assign({}, previousReponse, {
+          users: [...previousReponse.users, ...fetchMoreResult.users]
+        });
       },
     })
   }
