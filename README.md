@@ -3,7 +3,8 @@ Simple Next.js example with Apollo
 
 ## Description
 - Ability to search and show fake list of Users as List of User Cards on Users Page.
-- Users can click on Load More to load more data
+- Users can click on Load More to load more data.
+- Users can click on email/phone to directly open the respective email/dialer(if phone).
 
 ## Tech stack:
 - Next.js
