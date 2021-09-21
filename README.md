@@ -22,5 +22,6 @@ Simple Next.js example with Apollo
   - Run `npm run dev`
 
 ## Screenshots:
-<img width="1440" alt="Screen2" src="https://user-images.githubusercontent.com/10517237/134182357-966f7a10-d106-4217-9088-ac77439585d5.png">
+
 <img width="1440" alt="Screen1" src="https://user-images.githubusercontent.com/10517237/134182368-fd692dc1-5429-4597-9c82-d959008941dd.png">
+<img width="1440" alt="Screen2" src="https://user-images.githubusercontent.com/10517237/134182357-966f7a10-d106-4217-9088-ac77439585d5.png">
