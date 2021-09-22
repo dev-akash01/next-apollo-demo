@@ -10,21 +10,20 @@ orbs:
   # NOTE: Environment variables containing the necessary secrets can be setup in the CircleCI UI
   # See here https://circleci.com/docs/2.0/env-vars/#setting-an-environment-variable-in-a-project
   heroku: circleci/heroku@1.2
-
-jobs:
-  backend:
-    working_directory: ~/next-apollo-demo/server
-    steps:
-      - checkout
-      - run: npm install
-      - run: npm run dev
-  frontend:
-    working_directory: ~/next-apollo-demo/client
-    steps:
-      - checkout
-      - run: npm install
-      - run: npm run build
-      - run: npm run dev
+  jobs:
+    backend:
+      working_directory: ~/next-apollo-demo/server
+      steps:
+        - checkout
+        - run: npm install
+        - run: npm run dev
+    frontend:
+      working_directory: ~/next-apollo-demo/client
+      steps:
+        - checkout
+        - run: npm install
+        - run: npm run build
+        - run: npm run dev
 
 workflows:
   # Below is the definition of your workflow.
