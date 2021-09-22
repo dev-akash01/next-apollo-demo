@@ -17,14 +17,14 @@ jobs:
       - image: cimg/base:stable
     steps:
       - node/install-packages:
-           app-dir: ~/next-apollo-demo/server
+           app-dir: server
   frontend:
     docker:
       # replace with your preferred image
       - image: cimg/base:stable
     steps:
       - node/install-packages:
-          app-dir: ~/next-apollo-demo/client
+          app-dir: client
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
