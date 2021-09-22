@@ -11,6 +11,21 @@ orbs:
   # See here https://circleci.com/docs/2.0/env-vars/#setting-an-environment-variable-in-a-project
   heroku: circleci/heroku@1.2
 
+jobs:
+  backend:
+    working_directory: ~/next-apollo-demo/server
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run dev
+  frontend:
+    working_directory: ~/next-apollo-demo/client
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run build
+      - run: npm run dev
+
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
@@ -28,3 +43,7 @@ workflows:
               # This sample config runs this job on any branch matching the regex below, however, it's more likely you want to only run this job on master.
               only: /.*-heroku-deploy/ # Delete this line
               # only: master  # Uncomment this line
+  backends_and_frontend:
+    jobs:
+      - backend
+      - frontend
