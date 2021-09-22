@@ -35,7 +35,7 @@ workflows:
       - backend
       - frontend
       - node/run:
-          app-dir: next-apollo-demo/server 
+          app-dir: ../next-apollo-demo/server 
           npm-run: dev 
       - node/run:
           app-dir: next-apollo-demo/client 
