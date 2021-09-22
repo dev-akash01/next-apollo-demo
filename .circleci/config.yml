@@ -17,14 +17,14 @@ jobs:
       - image: cimg/base:stable
     steps:
       - node/install-packages:
-           app-dir: next-apollo-demo/server
+           app-dir: ~next-apollo-demo/server
   frontend:
     docker:
       # replace with your preferred image
       - image: cimg/base:stable
     steps:
       - node/install-packages:
-          app-dir: next-apollo-demo/client
+          app-dir: ~next-apollo-demo/client
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
@@ -35,15 +35,15 @@ workflows:
       - backend
       - frontend
       - node/run:
-          app-dir: next-apollo-demo/server 
+          app-dir: ~next-apollo-demo/server 
           npm-run: dev 
       - node/run:
-          app-dir: next-apollo-demo/client 
+          app-dir: ~next-apollo-demo/client 
           npm-run: dev 
   sample:
     jobs:
       - node/test:
-          app-dir: next-apollo-demo/client
+          app-dir: ~next-apollo-demo/client
       - heroku/deploy-via-git:
           force: true # this parameter instructs the push to use a force flag when pushing to the heroku remote, see: https://devcenter.heroku.com/articles/git
           requires:
