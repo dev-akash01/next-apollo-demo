@@ -30,10 +30,11 @@ async function startApolloServer(typeDefs, resolvers) {
 
   const port = process.env.PORT || 4200;
 
+
   app.listen(port, err => {
     if (err) throw err
     console.log(
-      `Server Started at http://localhost:${port}${server.graphqlPath}`,
+      `Server Started at ${port}${server.graphqlPath}`,
     )
   })
 }
