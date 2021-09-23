@@ -14,7 +14,7 @@ jobs:
   backend:
     docker:
       # replace with your preferred image
-      - image: cimg/base:stable
+      - image: circleci/node:latest
     working_directory: ~/next-apollo-demo/server
     steps:
       - checkout:
@@ -24,7 +24,7 @@ jobs:
   frontend:
     docker:
       # replace with your preferred image
-      - image: cimg/base:stable
+      - image: circleci/node:latest
     working_directory: ~/next-apollo-demo/client
     steps:
       - checkout:
