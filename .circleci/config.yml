@@ -17,7 +17,8 @@ jobs:
       - image: cimg/base:stable
     working_directory: ~/next-apollo-demo/server
     steps:
-      - checkout
+      - checkout:
+          path: ~/next-apollo-demo
       - node/install-packages:
            app-dir: ~/next-apollo-demo/server
   frontend:
@@ -26,7 +27,8 @@ jobs:
       - image: cimg/base:stable
     working_directory: ~/next-apollo-demo/client
     steps:
-      - checkout
+      - checkout:
+          path: ~/next-apollo-demo
       - node/install-packages:
           app-dir: ~/next-apollo-demo/client
 workflows:
