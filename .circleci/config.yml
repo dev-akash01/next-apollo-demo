@@ -15,14 +15,18 @@ jobs:
     docker:
       # replace with your preferred image
       - image: cimg/base:stable
+    working_directory: ~/next-apollo-demo/server
     steps:
+      - checkout
       - node/install-packages:
            app-dir: ~/next-apollo-demo/server
   frontend:
     docker:
       # replace with your preferred image
       - image: cimg/base:stable
+    working_directory: ~/next-apollo-demo/client
     steps:
+      - checkout
       - node/install-packages:
           app-dir: ~/next-apollo-demo/client
 workflows:
