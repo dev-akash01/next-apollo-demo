@@ -10,6 +10,8 @@ Simple Next.js example with Apollo
 - Next.js
 - Apollo Graph QL
 - TypeScript
+- Added: Circle
+- Docker: WIP
 
 ## Instructions to Run application
 - System Requirements: Node.js
