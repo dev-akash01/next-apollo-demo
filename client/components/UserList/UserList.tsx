@@ -87,7 +87,7 @@ const UserList = () => {
                   )
                 })
               ) : (
-                <div className={styles.none}>No Results found. Please try again.</div>
+                <div className={styles.none}><p>No Results found. Please try again.</p></div>
               )}
             </div>
             {loadMoreBtn && (

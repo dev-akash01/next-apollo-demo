@@ -18,7 +18,7 @@ const UserSearch = (props: any) => {
     }
   `
 
-  /** executeQuery handles when to execute the subsequest queries through useLazyQuery **/
+  /** executeQuery handles when to execute the subsequent queries through useLazyQuery **/
   const [executeQuery, { data }] = useLazyQuery(query, {
     variables: {
       name: searchKeyword.toString().trim(),

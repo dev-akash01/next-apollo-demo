@@ -4,11 +4,11 @@ const userList = fakeDataGenerator();
 
 const getUserList = args => {
   if (args.offset && args.limit) {
-    return userList.slice(args.offset, args.offset + args.limit)
+    return userList.slice(args.offset, args.offset + args.limit);
   } else if (args.name) {
     return userList.filter(user => {
-      const name = user.name.toLowerCase()
-      return name.includes(args.name.toLowerCase())
+      const name = user.name.toLowerCase();
+      return name.includes(args.name.toLowerCase());
     })
   } else {
     return userList

@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import Name from '../components/Name'
-import { ApolloProvider } from '@apollo/client'
-import client from '../lib/with-apollo'
+import Link from 'next/link';
+import Name from '../components/Name';
+import { ApolloProvider } from '@apollo/client';
+import client from '../lib/with-apollo';
 
 const Page = () => (
   <ApolloProvider client={client}>
