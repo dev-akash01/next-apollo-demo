@@ -17,11 +17,10 @@ Simple Next.js example with Apollo
 - System Requirements: Node.js
 - Clone the repo
 - Frontend Setup:
-  - Under <b>client</b> Folder Run command `npm install`
-  - Run Command `npm run build` for first time
-  - Run Command `num run dev`
+  - Run command `cd client npm install`
+  - Run Command `npm run build && npm run dev`
 - Server Setup:
-  - Under <b>server</b> folder Run command `npm install`
+  - Run command `cd server npm install`
   - Run `npm run dev`
 
 ## Screenshots:
